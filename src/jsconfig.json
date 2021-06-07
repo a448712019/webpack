@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "experimentalDecorators": true,
-    "target": "es2017",
-    "allowSyntheticDefaultImports": true
-  },
-}
-  
