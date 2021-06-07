@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "istanbul cover ./node_modules/.bin/_mocha",
     "start": "webpack serve --open --inline",
     "build": "webpack"
   },
@@ -33,9 +33,11 @@
     "inline-html-loader": "^0.1.0",
     "less": "^4.1.1",
     "less-loader": "^9.0.0",
+    "mocha": "^8.4.0",
     "postcss": "^8.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
     "style-loader": "^2.0.0",
     "webpack-dev-server": "^3.11.2"
   }
