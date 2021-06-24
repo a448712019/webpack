@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover ./node_modules/.bin/_mocha",
-    "start": "webpack serve --open --inline",
-    "build": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "eslint": "eslint --fix",
+    "start": "webpack server --config webpack.dev.js  --open --inline"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "postcss-loader": "^5.3.0",
     "postcss-preset-env": "^6.7.0",
     "px2rem-loader": "^0.1.9",
+    "speed-measure-webpack-plugin": "^1.5.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
   },

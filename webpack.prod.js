@@ -3,8 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
+const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
 // const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const path = require('path')
+
+const smp = new SpeedMeasureWebpackPlugin();
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -84,7 +87,7 @@ module.exports = {
         //     })
         // } 
     ],
-    // stats: 'errors-only',
+    stats: 'errors-only',
     // target: 'web',
     // devServer: {
     //     contentBase: path.join(__dirname, 'dist'),
